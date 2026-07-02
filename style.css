@@ -99,3 +99,33 @@ footer {
   background: black;
   font-size: 0.8rem;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #0a0f14;
+  position: sticky;
+  top: 0;
+}
+
+.nav-links a, .navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.nav-links a:hover, .navbar a:hover {
+  color: #00ff88;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #00ff88;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
