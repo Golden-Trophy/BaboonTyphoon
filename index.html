@@ -1,21 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baboon Typhoon</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baboon Typhoon</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="background:#101820;color:white;font-family:Arial;text-align:center;padding-top:100px;">
-    <h1>🦍 Baboon Typhoon</h1>
 
-    <h2>Coming August 2026</h2>
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Baboon Typhoon</h1>
+      <p class="tagline">A chaotic jungle VR-style fan experience</p>
+      <button onclick="scrollToInfo()">Learn More</button>
+    </div>
+  </header>
 
+  <section id="info" class="section">
+    <h2>About the Game</h2>
     <p>
-        Welcome to the official website for Baboon Typhoon.
+      Baboon Typhoon is a fast-paced jungle movement fan game inspired by physics-based VR locomotion.
+      Swing, climb, and survive the chaos of the storm.
     </p>
+  </section>
 
-    <p>
-        The storm is coming...
-    </p>
+  <section class="section dark">
+    <h2>Features</h2>
+    <div class="grid">
+      <div class="card">🌴 Jungle Maps</div>
+      <div class="card">🦍 Physics Movement</div>
+      <div class="card">⚡ Fast Gameplay</div>
+      <div class="card">🌪️ Typhoon Events</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Release</h2>
+    <p>Estimated Release: <b>August 2026</b></p>
+    <p class="small">This is a fan project and not affiliated with Gorilla Tag.</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Baboon Typhoon Dev Team</p>
+  </footer>
+
+  <script>
+    function scrollToInfo() {
+      document.getElementById("info").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
 </body>
 </html>
