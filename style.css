@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f14;
+  color: white;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  color: #7CFF6B;
+  text-shadow: 0 0 20px #00ff88;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background: #00ff88;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.dark {
+  background: #111823;
+}
+
+h2 {
+  color: #00ff88;
+  margin-bottom: 20px;
+}
+
+/* GRID CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.card {
+  background: #1b2633;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #243447;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  font-size: 0.8rem;
+}
